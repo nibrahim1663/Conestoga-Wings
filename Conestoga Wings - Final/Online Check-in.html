@@ -1,0 +1,224 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website title in the browser bar -->
+    <title>Online Check-In</title>
+    <!-- Website Logo in the browser bar -->
+    <link rel="icon" type="image/png" href="logo/CW.png">
+    <!-- CSS internal -->
+   <link rel="stylesheet" href="css/Online Check-in.css">
+    <!-- CSS External -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4618eb2d1c.js" crossorigin="anonymous"></script>
+</head>
+<hr style="border-color: orange; border-width: 5px; margin-bottom: auto;" >
+<body>
+    <header>
+        <div id="navDiv">
+            <div class="logo">
+                <a href="conestogaWings.html"><img src="logo/logo.png" alt=""></a>
+            </div>
+        
+            <nav>
+                <ul>
+                    <li><span style="padding-right: 217px;"></span></li>
+                    <li class="dropbtn" onmouseover="showPlanList()"><a href="#"><i class="fa fa-calendar"></i> Plan & Book</a></li>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="booking.html">Book Flight</a>
+                        <a onclick="NewTab()">Book Hotel</a>
+                        
+                    </div>
+                    <li class="dropbtn2" onmouseover="showManageList()"><a href="#"><i class="fa fa-edit"></i> Manage Booking</a></li>
+                    <div class="dropdown-content2" id="myDropdown2">
+                        <a href="manageBooking.html">Change Booking</a>
+                        <a href="manageBooking.html">Cancel Booking</a>
+                        
+                    </div>
+                    <li><a href="support.html"><i class="fa fa-exclamation-circle"></i> Support</a></li>
+                    <li><a href="Online Check-in.html"><i class="fa fa-laptop"></i> Online Check-In</a></li>
+                    <li><a href="destinations.html"><i class="fa fa-plane"></i> Destinations</a></li>
+                    <li><a href="contactUs.html"><i class="fa fa-envelope-square"></i> Contact Us</a></li> 
+                </ul>
+            </nav>
+        </div>
+        
+    </header>   
+    <main>
+        <div class="mainDiv">
+            <div>
+                <h1>ONLINE CHECK-IN</h1>
+            </div>
+            <p class="headerParagrph">
+                Please enter your Reservation Number, Departing City and Departure Date to start the check-in process.
+            </p>
+            
+            <br>
+            <div class="manageBookingDiv" id="mBookingDiv">
+                <h3>Reservation Number</h3>
+                <input type="text" class="rsvNumberBox" placeholder="Example: 123456789">
+                <br><br><br>
+                <h3>Departing City</h3>
+                <input type="text" class="lastNameBox" placeholder="Example: Toronto">
+                <br><br><br>
+                <h3>Departure Date</h3>
+                <input type="date" class="deprtDateBox" id="dDateBox">
+                <br><br><br>
+                <br><br><br>
+                <button class="manageBookingBtn" id="checkInBtn" value="check-in">Check-In</button>
+                
+            </div>
+            <div>
+                <h1>Useful Information</h1>
+            </div>
+            <div id="destinationsOfferImages">
+                
+                    <div class="column">
+                        <img src="images/seats.jpg" alt="Snow" class="imgLeft">
+                            <div class="seats">
+                                <h3>Add seats</h3>
+                                <p>
+                                    What will it be - window or aisle? Whether flying individually or with your family, select your 
+                                    preferred seat prior to your flight and guarantee that it is reserved for you.
+                                </p>
+                            </div>
+                    </div>
+                    <div class="column">
+                        <img src="images/meals.jpg" alt="Forest" class="imgMiddle">
+                            <div class="meals">
+                                <h3>Add meals</h3>
+                                <p>
+                                    Enjoy a more personalized journey with Conestoga Wings. Select the meal of your choice offered 
+                                    by our Sky Café menu prior to your flight. While booking online, you can choose from a wide selection of sumptuous onboard food and beverages at extremely affordable prices.
+                                </p>
+                            </div>
+                    </div>
+                    <div class="column">
+                        <img src="images/modify.jpg" alt="Mountains" class="imgRight">
+                            <div class="modifyFlight">
+                                <h3>Modify Flight</h3>
+                                <p>
+                                    Have your travel plans changed? Do you want to modify the day of travel or even the destination 
+                                    of your trip? You may do so easily and online as long as you make the changes 24 hours prior to 
+                                    your flight (72h for flights from/to Vancouver). 
+                                </p>
+                            </div>
+                    </div>
+            </div>
+            <div class="newsDiv">   
+              
+                <article id="art1">
+                    <h1>In the news...</h1>
+                <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings opens the booking for 212 shuttle flights to Doha for FIFA World Cup</p>
+                <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings launches flights to Kuala-Lampour</p>
+                <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings launches "City Check-in" services</p>
+                <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings starts its seasonal flights to Hawai</p>
+                <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings reports first quarter 2022 net profit of CAD 110 million</p>
+                </article>
+                <article id="art2">
+                    <h1>Newsletter subscriptions...</h1>
+                    <p>Register your email with us and be the first to know about latest offers and promotions</p>
+                    <select name="title" id="title">
+                        <option value="" disabled selected hidden>Title</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Master">Master</option>
+                        <option value="Miss">Miss</option>
+                    </select>
+                    <input type="text" id="name" placeholder="Name"><br>
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                    <span id="nice">Example: john@example.com</span><br>
+                    <input type="text" id="country" placeholder="Country">
+                    <select name="language" id="language">
+                        <option value="" disabled selected hidden>Language</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                    </select>
+                    <button id="subscribe" >Subscribe</button>
+                </article>
+            </div> 
+
+            <hr class="thridHorizontal">
+            <br>
+            <div id="keepTouch">
+                <h2> Keep in touch...</h2>
+                <p>Follow us to receive exclusive deals <br> and all our latest news and offers.</p>
+            </div >
+            <div id="socialMediaIcons">
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <hr class="fourthHorizontal">
+            <div class="info">
+                <div id="info1">
+                    <h3>About Us</h3>
+                    <div id="AboutUsItemList_Div">
+                        <ul id="AboutUsList">
+                            <li class="AboutUsListItem">Our Story</li><br>
+                            <li class="AboutUsListItem">Our Fleet</li><br>
+                            <li class="AboutUsListItem">Media Center</li>
+                        </ul>
+                    </div>
+            </div>
+            <div id="info2">
+                    <h3>Customer Care</h3>
+                    <div id="CustomerCareItemList_Div">
+                        <ul id="CustomerCareList">
+                            <li class="CustomnerCareListItem"><a href="contactUs.html">Contact Us</a> </li><br>
+                            <li class="CustomnerCareListItem">Office Map</li><br>
+                            <li class="CustomnerCareListItem">Call Center</li>
+                        </ul>
+                    </div>
+            </div>
+            <div id="info3">
+                <h3>In-Flight Services</h3>
+                    <div id="InflightServices_Div">
+                        <ul id="InflightServicesList">
+                            <li class="InflightServicesListItem">Food Service</li><br>
+                            <li class="InflightServicesListItem">Wi-fi Service</li><br>
+                            <li class="InflightServicesListItem">Entertainment</li>
+                        </ul>
+                    </div>
+            </div>
+                <div id="info4">
+                    <h3>Book Flight</h3>
+                    <div  id="BookFlight_Div">
+                        <ul id="BookFlightList">
+                            <li class="BookFlightListItem">Summer Offers</li><br>
+                            <li class="BookFlightListItem">Book Hotel</li><br>
+                            <li class="BookFlightListItem"><a href="booking.html">Book Trip</a></li>
+                        </ul>
+                </div>
+            </div>
+            </div>
+            <hr class="hr6">
+            <hr class="hr7">
+            <hr class="hr8">
+            <hr class="hr9">
+    </div>   
+    </main>
+   
+    <footer>
+        <p id="footerCopyRight">
+            Copyright 2022 <a href="#"><i class="fa fa-copyright"></i></a> Conestoga Wings. All rights reserved
+        </p>
+        <p id="footerSocialMediaIcons">
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-flickr"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="javascript/conestogaWings.js"></script>
+    <script src="javascript/support.js"></script>
+</body>
+
+</html>

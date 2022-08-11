@@ -1,0 +1,252 @@
+<!-- This is the HTML code for the Booking Page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website title in the browser bar -->
+    <title>Booking</title>
+    <!-- Website Logo in the browser bar -->
+    <link rel="icon" type="image/png" href="logo/CW.png">
+    <!-- CSS internal -->
+   <link rel="stylesheet" href="css/booking.css">
+    <!-- CSS External -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4618eb2d1c.js" crossorigin="anonymous"></script>
+</head>
+<hr class="firstHorizontal">
+<body>
+    <header>
+        <div id="navDiv">
+            <div class="logo">
+                <a href="conestogaWings.html"><img src="logo/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><span class="spanInNav"></span></li>
+                    <li class="dropbtn" onmouseover="showPlanList()"><a href="#"><i class="fa fa-calendar"></i> Plan & Book</a></li>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="booking.html">Book Flight</a>
+                        <a onclick="NewTab()">Book Hotel</a>
+                    </div>
+                    <li class="dropbtn2" onmouseover="showManageList()"><a href="#"><i class="fa fa-edit"></i> Manage Booking</a></li>
+                    <div class="dropdown-content2" id="myDropdown2">
+                        <a href="manageBooking.html">Change Booking</a>
+                        <a href="manageBooking.html">Cancel Booking</a>
+                    </div>
+                    <li><a href="support.html"><i class="fa fa-exclamation-circle"></i> Support</a></li>
+                    <li><a href="Online Check-in.html"><i class="fa fa-laptop"></i> Online Check-In</a></li>
+                    <li><a href="destinations.html"><i class="fa fa-plane"></i> Destinations</a></li>
+                    <li><a href="contactUs.html"><i class="fa fa-envelope-square"></i> Contact Us</a></li> 
+                </ul>
+            </nav>
+        </div>
+        
+    </header>   
+    <main>
+        <div class="mainDiv">
+            <div>
+                <h1>Book your flight</h1>
+            </div>
+                <div class="findAndBook">
+                    <div class="departingSection">
+                        <label for="departing city" class="depCityLabel">Departing City</label> &nbsp;
+                        <select name="departCity" id="departCity" required>
+                            <option value="" disabled selected hidden>Select Departure City...</option>
+                            <option value="Bombay">Bombay</option>
+                            <option value="Damascus">Damascus</option>
+                            <option value="Istanbul">Istanbul</option>
+                            <option value="Milano">Milano</option>
+                            <option value="Paris">Paris</option>
+                            <option value="Stockholm">Stockholm</option>
+                        </select>
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <label for="arriving city" class="arrCityLabel">Arriving City</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select name="arriveCity" id="arriveCity" required>
+                            <option value="" disabled selected hidden>Select Arrival City...</option>
+                            <option value="Bombay">Bombay</option>
+                            <option value="Damascus">Damascus</option>
+                            <option value="Istanbul">Istanbul</option>
+                            <option value="Milano">Milano</option>
+                            <option value="Paris">Paris</option>
+                            <option value="Stockholm">Stockholm</option>
+                        </select>
+                        <i class="fa-solid fa-plane-arrival"></i>
+                        <span class="spanBeforeRadioBtn"></span>
+        
+                        <input type="radio" name="oneWay" id="oneWay" value="oneWay"> <label class="labelOneWay">One Way</label> &nbsp;
+                        <input type="radio" name="return" id="retunrn" value="return" checked> <label class="labelReturn">Return</label>
+                        <br><br>
+                        <span class="spanBetween"></span>
+                        <input type="button" name="findBookButton" id="findBookButton" value="Book Now">
+                        <br><br>
+                        <label for="departing date" class="depDateLabel">Leaving Date</label> &nbsp;&nbsp;&nbsp;
+                        <input type="date" id="departCalendar" value="" min="2022-01-01" max="2022-12-31" required class="depDateBox">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span class="spanBetweenDeprtAndReturn_Boxes"></span>
+                        <label for="returning date" class="returnDateLabel">Returning Date</label> &nbsp;
+                        <input type="date" id="returnCalender" value="" min="2022-01-01" max="2022-12-31" required class="returnDateBox">
+                        <i class="fa-solid fa-calendar-days" id="anotherDay"></i>
+                        <span class="spanAfterReturnDateBox"></span>
+                        <label for="travellers" class="travellersLabel">Travellers</label> &nbsp;
+                        <select name="travellers" id="travellers" required>
+                            <option value="" disabled selected hidden>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <hr class="secondHorizontal">
+                <div>
+                    <h1>Useful Information</h1>
+                </div>
+                <div  id="destinationsOfferImages">
+                    <div>
+                        <div class="column">
+                            <img src="images/bookingChannels.jpg" alt="Snow" class="bookingImage">
+                                <div id="bookingDiv">
+                                    <h3>Booking Channels</h3>
+                                    <p>
+                                        Conestoga Wings avails a wide range of booking channels that make your life just easier! 
+                                        You can simply choose what is closer and more convenient to you. 
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="column">
+                            <img src="images/paymentOptions.jpg" alt="Forest" class="paymentImage">
+                                <div id="paymentDiv" >
+                                    <h3>Payment Options</h3>
+                                    <p>
+                                        Conestoga Wings offers multiple payment options so our customers can select what suits them.
+                                        the most.
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="column">
+                            <img src="images/whereWeFly.jpg" alt="Mountains" class="whereToFlyImage">
+                                <div id="whereWeFlyDive">
+                                    <h3>Where We Fly</h3>
+                                    <p >
+                                        We fly you to over 170 destinations spread across the Middle East, North Africa, Asia, 
+                                        North America and Europe. 
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            <hr class="thirdHorizontal">
+            <div class="newsDiv">   
+                <article id="art1">
+                    <h1>In the news...</h1>
+                   <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings opens the booking for 212 shuttle flights to Doha for FIFA World Cup</p>
+                   <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings launches flights to Kuala-Lampour</p>
+                   <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings launches "City Check-in" services</p>
+                   <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings starts its seasonal flights to Hawai</p>
+                   <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings reports first quarter 2022 net profit of CAD 110 million</p>
+                </article>
+                <article id="art2">
+                    <h1>Newsletter subscriptions...</h1>
+                    <p>Register your email with us and be the first to know about latest offers and promotions</p>
+                    <select name="title" id="title">
+                        <option value="" disabled selected hidden>Title</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Master">Master</option>
+                        <option value="Miss">Miss</option>
+                    </select>
+                    <input type="text" id="name" placeholder="Name"><br>
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                    <span id="nice">Example: john@example.com</span><br>
+                    <input type="text" id="country" placeholder="Country">
+                    <select name="language" id="language">
+                        <option value="" disabled selected hidden>Language</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                    </select>
+                    <button id="subscribe" >Subscribe</button>
+                </article>
+            </div> 
+            <hr class="fourthHorizontal">
+            <br>
+        <div id="keepTouch">
+                <h2> Keep in touch...</h2>
+                <p>Follow us to receive exclusive deals <br> and all our latest news and offers.</p>
+        </div >
+        <div id="socialMediaIcons">
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-flickr"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <hr class="fifthHorizontal">
+            <div class="info">
+                <div id="info1">
+                    <h3>About Us</h3>
+                    <div id="AboutUsItemList_Div">
+                        <ul id="AboutUsList">
+                            <li class="AboutUsListItem">Our Story</li><br>
+                            <li class="AboutUsListItem">Our Fleet</li><br>
+                            <li class="AboutUsListItem">Media Center</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="info2">
+                    <h3>Customer Care</h3>
+                    <div id="CustomerCareItemList_Div">
+                        <ul id="CustomerCareList">
+                            <li class="CustomnerCareListItem"><a href="contactUs.html">Contact Us</a></li><br>
+                            <li class="CustomnerCareListItem">Office Map</li><br>
+                            <li class="CustomnerCareListItem">Call Center</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="info3">
+                <h3>In-Flight Services</h3>
+                    <div id="InflightServices_Div">
+                        <ul id="InflightServicesList">
+                            <li class="InflightServicesListItem">Food Service</li><br>
+                            <li class="InflightServicesListItem">Wi-fi Service</li><br>
+                            <li class="InflightServicesListItem">Entertainment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="info4">
+                    <h3>Book Flight</h3>
+                    <div  id="BookFlight_Div">
+                        <ul id="BookFlightList">
+                            <li class="BookFlightListItem">Summer Offers</li><br>
+                            <li class="BookFlightListItem">Book Hotel</li><br>
+                            <li class="BookFlightListItem"><a href="booking.html">Book Trip</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr6">
+            <hr class="hr7">
+            <hr class="hr8">
+            <hr class="hr9">
+        </div>        
+    </main>
+    <footer>
+        <p id="footerCopyRight">Copyright 2022 <a href="#"><i class="fa fa-copyright"></i></a> Conestoga Wings. All rights reserved</p>
+        <p id="footerSocialMediaIcons">
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-flickr"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="javascript/conestogaWings.js"></script>
+    <script src="javascript/support.js"></script>
+</body>
+</html>

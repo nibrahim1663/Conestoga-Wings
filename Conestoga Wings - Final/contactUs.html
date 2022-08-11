@@ -1,0 +1,261 @@
+<!-- HTML code for ContactUs Page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website title in the browser bar -->
+    <title>Contact Us</title>
+    <!-- Website Logo in the browser bar -->
+    <link rel="icon" type="image/png" href="logo/CW.png">
+    <!-- CSS internal -->
+   <link rel="stylesheet" href="css/contactUs.css">
+    <!-- CSS External -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4618eb2d1c.js" crossorigin="anonymous"></script>
+</head>
+<hr class="FirstHorizontalLine">
+<body>
+    <header>
+        <div id="navDiv">
+            <div class="logo">
+                <a href="conestogaWings.html"><img src="logo/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><span class="span1"></span></li>
+                    <li class="dropbtn" onmouseover="showPlanList()"><a href="#"><i class="fa fa-calendar"></i> Plan & Book</a></li>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="booking.html">Book Flight</a>
+                        <a onclick="NewTab()">Book Hotel</a>
+                    </div>
+                    <li class="dropbtn2" onmouseover="showManageList()"><a href="#"><i class="fa fa-edit"></i> Manage Booking</a></li>
+                    <div class="dropdown-content2" id="myDropdown2">
+                        <a href="manageBooking.html">Change Booking</a>
+                        <a href="manageBooking.html">Cancel Booking</a>
+                    </div>
+                    <li><a href="support.html"><i class="fa fa-exclamation-circle"></i> Support</a></li>
+                    <li><a href="Online Check-in.html"><i class="fa fa-laptop"></i> Online Check-In</a></li>
+                    <li><a href="destinations.html"><i class="fa fa-plane"></i> Destinations</a></li>
+                    <li><a href="contactUs.html"><i class="fa fa-envelope-square"></i> Contact Us</a></li> 
+                </ul>
+            </nav>
+        </div>
+        
+    </header>   
+    <main>
+        <div class="mainDiv">
+                <div>
+                    <h1>Help & Support</h1>
+                </div>
+                <br>
+                <hr class="FirstHorizontalLine">
+                <div class="div1">
+                    <label for="FAQ" class="faqlbl"> Search frequently asked questions</label> &nbsp;
+                    <input type="text" placeholder=" What are you looking for?" id="searchBox">&nbsp;
+                    <i class="fa fa-search"></i>&nbsp;
+                    <button id="searchBtn">Search</button>
+                </div>
+                <hr class="sndHorizontalLine">
+                <div class="containerFAQ">
+                    <h1>Frequently Asked Questions</h1><br>
+                    <hr class="FirstHorizontalLine">
+                    <div id="faqs">
+                        <h2 id="id">Q. Fees and charges</h2>
+                        <div class="open">
+                            <p class="para">
+                                At Conestoga Wings, we think that our customers should only pay for the services 
+                                they need. This is why we offer a wide range of optional services allowing you to choose the extras that you 
+                                value and save even more. <br><br> The prices of the optional services can vary by flight. Select your origin and 
+                                destination to get the details about the services applicable on your flight.
+                            </p>
+                        </div>
+                        <h2>Q. Name change</h2>
+                        <div class="open">
+                            <p class="para">
+                                You can always apply for a FREE name change if the reservation is still on hold and has
+                                not been paid for. <br><br> However, once the reservation is paid, to change the name of the passenger, you will be 
+                                required to pay a name change fee of CAD $50.00 per person for each reservation on Conestoga Wings, as well
+                                as any fare difference if applicable.<br><br> Please note that you are required to complete this process at least 24 hours 
+                                prior to the scheduled time of departure.
+                            </p>
+                        </div>
+                        <h2>Q. Seat selection</h2>
+                        <div class="open">
+                            <p class="para">
+                                You can choose your seat when you book your flights at an additional charge.  
+                                If you do not pre-select your seat, our staff will assign an available seat for you during the time of 
+                                check in.
+                                <br><br>
+                                For safety precautions, emergency seats have special requirements as passengers travelling with their 
+                                infants, and passengers with limited mobility are unable to utilize these seats .
+                            </p>
+                        </div>
+    
+                        <h2>Q. Online Check-In</h2>
+                        <div class="open">
+                            <p class="para">
+                                Online check in is available across the majority of Conestoga Wings destinations. <br> <br>
+    
+                                If you are flying from Waterloo, online check-in will be open 36 hours prior to departure. If your departure 
+                                is from other airports, online check-in will be open 24 hours prior to departure time.<br> <br>
+    
+                                You will be asked to provide your reservation number, name, flight date, flight number, and specify your 
+                                origin airport. Once all of the steps are completed you will be issued a boarding pass which you need to 
+                                print and present at the airport.<br> <br>
+    
+                                In case you are traveling without a checked luggage, you can use this boarding pass to board the flight 
+                                directly without the need of passing through the check in counters.<br> <br>
+    
+                                In case you are traveling with a checked luggage, you are kindly required to approach the 
+                                “Baggage Drop Off Counters” dedicated for the online checked in passengers, where you will check in your 
+                                luggage and collect the luggage tags then proceed to your gate.<br> <br>
+    
+                                <em><strong><u>Note:</u></strong></em> Some airports authorities do not accept the online boarding pass; 
+                                thus you will be required to replace it at the dedicated check-in counters of your flight within the regular 
+                                counter opening time if requested to do so.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="sndHorizontalLine">
+                </div>
+                <div  id="destinationsOfferImages">
+                    <div>
+                        <div class="column">
+                            <a href="mailto:nibrahim1663@conestogac.on.ca">
+                                    <img src="images/writeToUS.jpg" alt="Snow" id="image1">
+                                
+                                <div class="overlay1"></div>
+                                <div class="emailUsDiv">
+                                    <h3><i class="fa fa-envelope"></i> &nbsp;EMAIL US</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column" id="img2">
+                            <img src="images/callCenter.jpg" alt="Forest" id="image2">
+                            <div class="overlay2"></div>
+                            <div class="callCenterDiv">
+                                <h3><i class="fa fa-phone-square"></i> &nbsp;CALL CENTER</h3>
+                            </div>
+                        </div>
+                        <div class="column" id="img3">
+                            <img src="images/salesOffice.jpg" alt="Mountains" id="image3">
+                            <div class="overlay3"></div>
+                            <div class="salesOffDiv">
+                                <h3><i class="fa fa-desktop"></i> &nbsp;SALES OFFICE</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <hr class="secondHr">
+          
+            <div class="newsDiv">   
+                <article id="art1">
+                    <h1>In the news...</h1>
+                <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings opens the booking for 212 shuttle flights to Doha for FIFA World Cup</p>
+                <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings launches flights to Kuala-Lampour</p>
+                <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings launches "City Check-in" services</p>
+                <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings starts its seasonal flights to Hawai</p>
+                <p><i class="fa fa-arrow-circle-o-right"></i> 
+                    Conestoga Wings reports first quarter 2022 net profit of CAD 110 million</p>
+                </article>
+                <article id="art2">
+                    <h1>Newsletter subscriptions...</h1>
+                    <p>Register your email with us and be the first to know about latest offers and promotions</p>
+                    <select name="title" id="title">
+                        <option value="" disabled selected hidden>Title</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Master">Master</option>
+                        <option value="Miss">Miss</option>
+                    </select>
+                    <input type="text" id="name" placeholder="Name"><br>
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                    <span id="nice">Example: john@example.com</span><br>
+                    <input type="text" id="country" placeholder="Country">
+                    <select name="language" id="language">
+                        <option value="" disabled selected hidden>Language</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                    </select>
+                    <button id="subscribe" >Subscribe</button>
+                </article>
+            </div> 
+            <hr class="thridHorizontal">
+            <br>
+        <div id="keepTouch">
+                <h2> Keep in touch...</h2>
+                <p>Follow us to receive exclusive deals <br> and all our latest news and offers.</p>
+        </div >
+        <div id="socialMediaIcons">
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-flickr"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <hr class="fourthHorizontal">
+            <div class="info">
+                <div id="info1">
+                    <h3>About Us</h3>
+                    <div id="AboutUsItemList_Div">
+                        <ul id="AboutUsList">
+                            <li class="AboutUsListItem">Our Story</li><br>
+                            <li class="AboutUsListItem">Our Fleet</li><br>
+                            <li class="AboutUsListItem">Media Center</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="info2">
+                    <h3>Customer Care</h3>
+                    <div id="CustomerCareItemList_Div">
+                        <ul id="CustomerCareList">
+                            <li class="CustomnerCareListItem"><a href="contactUs.html">Contact Us</a></li><br>
+                            <li class="CustomnerCareListItem">Office Map</li><br>
+                            <li class="CustomnerCareListItem">Call Center</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="info3">
+                <h3>In-Flight Services</h3>
+                    <div id="InflightServices_Div">
+                        <ul id="InflightServicesList">
+                            <li class="InflightServicesListItem">Food Service</li><br>
+                            <li class="InflightServicesListItem">Wi-fi Service</li><br>
+                            <li class="InflightServicesListItem">Entertainment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="info4">
+                    <h3>Book Flight</h3>
+                    <div  id="BookFlight_Div">
+                        <ul id="BookFlightList">
+                            <li class="BookFlightListItem">Summer Offers</li><br>
+                            <li class="BookFlightListItem">Book Hotel</li><br>
+                            <li class="BookFlightListItem"><a href="booking.html">Book Trip</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr6">
+            <hr class="hr7">
+            <hr class="hr8">
+            <hr class="hr9">
+        </div>   
+        </main>
+        <footer>
+            <p id="footerCopyRight">Copyright 2022 <a href="#"><i class="fa fa-copyright"></i></a> Conestoga Wings. All rights reserved</p>
+            <p id="footerSocialMediaIcons">
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="javascript/conestogaWings.js"></script>
+        <script src="javascript/support.js"></script>
+</body>
+</html>
